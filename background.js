@@ -1,4 +1,5 @@
-const API_KEY = "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"; // Replace with your API key
+const API_KEY = "Paste your API Key"; 
+//also change post method
 
 async function summarizeText(text) {
     try {
