@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>AI Blog Summarizer</title>
+    <script src="popup.js" defer></script>
+    <style>
+
+textarea::-webkit-scrollbar {
+     width: 2px; /* Adjust the width as needed */
+   }
+
+   textarea::-webkit-scrollbar-thumb {
+     background-color: #4CAF50; /* Change the thumb color */
+   }
+
+   textarea::-webkit-scrollbar-track {
+     background-color: #f1f1f1; /* Change the track color */
+   }
+        html {
+            margin: 0;
+            padding: 0;
+        }
+        body { width: 300px; min-height: 520px;  overflow: scroll; padding: 10px; font-family: Arial, sans-serif; }
+        button { margin-top: 10px; padding: 5px; width: 100%; }
+        textarea { width: 100%; height: 100px; }
+        button:hover {
+            cursor: pointer;
+        }
+        h3 {
+            text-align: center;
+        }
+        button {
+            border: none;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            font-size: 1.05rem;
+            display: inline-block;
+            width: 48%;
+        }
+        h2 {
+            display: inline-block;
+        }
+        textarea {
+            color: rgba(0, 0, 0, 0.758);
+            padding: 3px;
+            text-align: justify;
+            resize: vertical;
+            font-size: 0.7rem;
+            font-family: sans-serif;
+        }
+        textarea:active {
+            border: 0.5px solid rgb(60, 60, 60);
+        }
+        #foot {
+            border-top: 2px solid blue;
+            position: fixed;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            bottom: 0;
+        }
+        #summary {
+            text-align: justify;
+
+        }
+    </style>
+</head>
+<body>
+    <h3>Blog Summarizer</h3>
+    <textarea id="inputText" placeholder="Paste blog content here..."></textarea>
+    <button id="summarizeBtn">Summarize</button>
+    <!-- 
+    <h2>or</h2>
+    <button id="summarizeBtn">Summarize page</button> -->
+    <h4>Summary:</h4>
+    <p id="summary"></p>
+
+    <p id="foot">Creator <a href="https://www.bhupesh.com.np" target="_blank">bhupesh</a></p>
+</body>
+</html>
